@@ -21,7 +21,6 @@ export default function SudokuNumber(props){
           }else{
             text = +text
           }
-          // setNumber((Number(text)? Number(text) : 0))
           changeNumber(text)
         }} style={{textAlign:'center'}}>
           
@@ -35,13 +34,13 @@ export default function SudokuNumber(props){
 
 const styles = StyleSheet.create({
   kotakKecil: {
-    height: '33.33%',
-    width: '33.33%',
+    height: '100%',
+    width: '11.11%',
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
-    borderWidth: 2
+    borderWidth: 1
   }
 })

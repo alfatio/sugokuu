@@ -10,21 +10,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   },
   board: {
-    flexDirection: 'row',
-    maxHeight: windowHeight*0.8,
+    flexDirection: 'column',
+    maxHeight: windowWidth,
     width: windowWidth,
     marginTop: windowHeight*0.01,
-    flexWrap: 'wrap',
-    padding: 3
+    padding: 3,
+    backgroundColor: '#000',
+    justifyContent:'center'
   },
   kotak: {
     backgroundColor: '#FF99CC',
     height: 150,
-    width: '33%',
+    width: '100%',
     borderStyle: "solid",
     borderWidth: 2,
-    flexDirection: 'row',
-    flexWrap: 'wrap'
+    flexDirection: 'row'
   },
   kotakKecil: {
     backgroundColor: '#FFFF33',

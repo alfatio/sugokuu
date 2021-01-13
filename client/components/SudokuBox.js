@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, Dimensions, SafeAreaView, ScrollView } from 'react-native';
 import SudokuNumber from './SudokuNumber'
 
+const windowWidth = Dimensions.get('window').width
+const windowHeight = Dimensions.get('window').height
+
 export default function SudokuBox(props){
   const box = props.box
   const changeNumber = (index,value) => {
@@ -20,12 +23,11 @@ export default function SudokuBox(props){
 
 const styles = StyleSheet.create({
   kotak: {
-    backgroundColor: '#FF99CC',
-    height: 150,
-    width: '33%',
-    borderStyle: 'solid',
-    borderWidth: 1.5,
+    backgroundColor: '#FFF',
+    height: windowWidth*0.1,
+    width: '100%',
+    // borderStyle: "solid",
     flexDirection: 'row',
-    flexWrap: 'wrap'
+    padding: 0
   }
 })
