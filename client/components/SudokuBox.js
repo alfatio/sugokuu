@@ -11,7 +11,7 @@ export default function SudokuBox(props){
     <View style={[styles.kotak]}>
       {
         box.map((el,i) => {
-          return <SudokuNumber key={i} number={el} index={i} changeNumber={changeNumber}/>
+          return <SudokuNumber key={i} number={el} index={i} editable={el.editable} changeNumber={changeNumber}/>
         })
       }
     </View>
@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF99CC',
     height: 150,
     width: '33%',
-    borderStyle: "solid",
-    borderWidth: 2,
+    borderStyle: 'solid',
+    borderWidth: 1.5,
     flexDirection: 'row',
     flexWrap: 'wrap'
   }
